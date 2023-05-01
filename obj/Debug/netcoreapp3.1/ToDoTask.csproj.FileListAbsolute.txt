@@ -12,3 +12,17 @@ C:\Users\Dairo.T\Desktop\C# Task\ToDoTask\obj\Debug\netcoreapp3.1\ToDoTask.cspro
 C:\Users\Dairo.T\Desktop\C# Task\ToDoTask\obj\Debug\netcoreapp3.1\ToDoTask.dll
 C:\Users\Dairo.T\Desktop\C# Task\ToDoTask\obj\Debug\netcoreapp3.1\ToDoTask.pdb
 C:\Users\Dairo.T\Desktop\C# Task\ToDoTask\obj\Debug\netcoreapp3.1\ToDoTask.genruntimeconfig.cache
+C:\Users\Dairo.T\Desktop\Personnal Project\TodoList_Application\bin\Debug\netcoreapp3.1\ToDoTask.exe
+C:\Users\Dairo.T\Desktop\Personnal Project\TodoList_Application\bin\Debug\netcoreapp3.1\ToDoTask.deps.json
+C:\Users\Dairo.T\Desktop\Personnal Project\TodoList_Application\bin\Debug\netcoreapp3.1\ToDoTask.runtimeconfig.json
+C:\Users\Dairo.T\Desktop\Personnal Project\TodoList_Application\bin\Debug\netcoreapp3.1\ToDoTask.runtimeconfig.dev.json
+C:\Users\Dairo.T\Desktop\Personnal Project\TodoList_Application\bin\Debug\netcoreapp3.1\ToDoTask.dll
+C:\Users\Dairo.T\Desktop\Personnal Project\TodoList_Application\bin\Debug\netcoreapp3.1\ToDoTask.pdb
+C:\Users\Dairo.T\Desktop\Personnal Project\TodoList_Application\obj\Debug\netcoreapp3.1\ToDoTask.csproj.AssemblyReference.cache
+C:\Users\Dairo.T\Desktop\Personnal Project\TodoList_Application\obj\Debug\netcoreapp3.1\ToDoTask.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dairo.T\Desktop\Personnal Project\TodoList_Application\obj\Debug\netcoreapp3.1\ToDoTask.AssemblyInfoInputs.cache
+C:\Users\Dairo.T\Desktop\Personnal Project\TodoList_Application\obj\Debug\netcoreapp3.1\ToDoTask.AssemblyInfo.cs
+C:\Users\Dairo.T\Desktop\Personnal Project\TodoList_Application\obj\Debug\netcoreapp3.1\ToDoTask.csproj.CoreCompileInputs.cache
+C:\Users\Dairo.T\Desktop\Personnal Project\TodoList_Application\obj\Debug\netcoreapp3.1\ToDoTask.dll
+C:\Users\Dairo.T\Desktop\Personnal Project\TodoList_Application\obj\Debug\netcoreapp3.1\ToDoTask.pdb
+C:\Users\Dairo.T\Desktop\Personnal Project\TodoList_Application\obj\Debug\netcoreapp3.1\ToDoTask.genruntimeconfig.cache

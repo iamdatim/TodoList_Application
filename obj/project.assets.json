@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Dairo.T\\Desktop\\C# Task\\ToDoTask\\ToDoTask.csproj",
+      "projectUniqueName": "C:\\Users\\Dairo.T\\Desktop\\Personnal Project\\TodoList_Application\\ToDoTask.csproj",
       "projectName": "ToDoTask",
-      "projectPath": "C:\\Users\\Dairo.T\\Desktop\\C# Task\\ToDoTask\\ToDoTask.csproj",
+      "projectPath": "C:\\Users\\Dairo.T\\Desktop\\Personnal Project\\TodoList_Application\\ToDoTask.csproj",
       "packagesPath": "C:\\Users\\Dairo.T\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Dairo.T\\Desktop\\C# Task\\ToDoTask\\obj\\",
+      "outputPath": "C:\\Users\\Dairo.T\\Desktop\\Personnal Project\\TodoList_Application\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

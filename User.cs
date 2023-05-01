@@ -8,7 +8,8 @@ namespace ToDoTask
 {
     internal class User
     {
-        public Guid id { get; set; }
+       // public Guid Id { get; set; }
+        public Guid UserId { get; set; }
         public string fullname { get; set; }
         public string Username { get; set; }
         public string Email { get; set; }

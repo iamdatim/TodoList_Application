@@ -11,6 +11,10 @@ namespace ToDoTask
 
     internal class Program
     {
+        public static Guid UserId { get; private set; }
+
+        //public static Guid UserId { get; private set; }
+
         static void Main(string[] args)
         {
             
@@ -84,6 +88,7 @@ namespace ToDoTask
                         break;
 
                     case "2":
+                        //Guid userId = User.UserId;
                         Login(todoList, registeredUsers, itemId);
                         break;
 
@@ -101,6 +106,7 @@ namespace ToDoTask
 
             static void Register(List<User> registeredUsers, Regex regex, Regex regexUsername, Regex regexps)
             {
+                
                 Console.Write("Please enter a username: ");
                 string username = Console.ReadLine();
 
@@ -128,6 +134,30 @@ namespace ToDoTask
 
                 Console.Write("Please enter a password: ");
                 string password = Console.ReadLine();
+                //ConsoleKeyInfo keyInfo;
+
+                //do
+                //{
+                //    keyInfo = Console.ReadKey(true);
+
+                //    // Ignore any non-character keys, except Backspace
+                //    if (char.IsLetterOrDigit(keyInfo.KeyChar) || keyInfo.Key == ConsoleKey.Backspace)
+                //    {
+                //        // If Backspace is pressed, remove the last character from the password
+                //        if (keyInfo.Key == ConsoleKey.Backspace && password.Length > 0)
+                //        {
+                //            password = password.Remove(password.Length - 1);
+                //            Console.Write("\b \b"); // erase the last character from the console
+                //        }
+                //        else
+                //        {
+                //            password += keyInfo.KeyChar;
+                //            Console.Write("*"); // display asterisk instead of the actual character
+                //        }
+                //    }
+                //} while (keyInfo.Key != ConsoleKey.Enter);
+
+
 
                 while (!regexps.IsMatch(password))
                 {
@@ -138,7 +168,7 @@ namespace ToDoTask
                     password = Console.ReadLine();
                 }
 
-                User newUser = new User { Username = username, Email = email, Password = password };
+                User newUser = new User { Username = username, Email = email, Password = password, UserId = Guid.NewGuid()};
                 registeredUsers.Add(newUser);
 
                 Console.ForegroundColor = ConsoleColor.Green;
@@ -146,22 +176,47 @@ namespace ToDoTask
                 Console.ResetColor();
                 Console.WriteLine();
 
-                while (registeredUsers.Contains(newUser))
-                {
-                    Console.ForegroundColor = ConsoleColor.Green;
-                    Console.WriteLine("User already exist");
-                    break;
-                }
+                //while (registeredUsers.Contains(newUser))
+                //{
+                //    Console.ForegroundColor = ConsoleColor.Green;
+                //    Console.WriteLine("User already exist");
+                //    break;
+                //}
+
             }
 
             
             static void Login(List<AddingList> todoList, List<User> registeredUsers, int itemId)
             {
+                Guid itemid;
+
                 Console.WriteLine("Please enter your Username:");
                 string loginUsername = Console.ReadLine();
 
                 Console.WriteLine("Please enter your password:");
                 string loginPassword = Console.ReadLine();
+                //ConsoleKeyInfo keyInfo;
+
+                //do
+                //{
+                //    keyInfo = Console.ReadKey(true);
+
+                //    // Ignore any non-character keys, except Backspace
+                //    if (char.IsLetterOrDigit(keyInfo.KeyChar) || keyInfo.Key == ConsoleKey.Backspace)
+                //    {
+                //        // If Backspace is pressed, remove the last character from the password
+                //        if (keyInfo.Key == ConsoleKey.Backspace && loginPassword.Length > 0)
+                //        {
+                //            loginPassword = loginPassword.Remove(loginPassword.Length - 1);
+                //            Console.Write("\b \b"); // erase the last character from the console
+                //        }
+                //        else
+                //        {
+                //            loginPassword += keyInfo.KeyChar;
+                //            Console.Write("*"); // display asterisk instead of the actual character
+                //        }
+                //    }
+                //} while (keyInfo.Key != ConsoleKey.Enter);
 
                 foreach (User user in registeredUsers)
                 {
@@ -268,8 +323,7 @@ namespace ToDoTask
                                     //string level = "High", "HIGH";
 
                                     //Using the Item Tile Regex to validate the Priority Level 
-                                    while (string.IsNullOrWhiteSpace(ItemPriorityLevel) && ItemPriorityLevel != "High" || ItemPriorityLevel != "HIGH" || ItemPriorityLevel != "high" ||
-                                        ItemPriorityLevel != "Medium" || ItemPriorityLevel != "MEDIUM" || ItemPriorityLevel != "medium" || ItemPriorityLevel != "Low" || ItemPriorityLevel != "LOW" || ItemPriorityLevel != "low")
+                                    while (string.IsNullOrWhiteSpace(ItemPriorityLevel))
                                     {
                                         Console.WriteLine();
                                         Console.ForegroundColor = ConsoleColor.Red;
@@ -279,7 +333,10 @@ namespace ToDoTask
                                         ItemPriorityLevel = Console.ReadLine();
                                     }
 
-                                    AddingList newList = new AddingList { Title = ItemTitle, Description = ItemDescription, DuedDate = ItemDuedDate, PriorityLevel = ItemPriorityLevel };
+                                    //var ItemId = Guid.NewGuid();
+                                    //UserId = user.ItemId;
+
+                                    AddingList newList = new AddingList { ItemId = UserId, Title = ItemTitle, Description = ItemDescription, DuedDate = ItemDuedDate, PriorityLevel = ItemPriorityLevel };
                                     todoList.Add(newList);
                                     // todoList.Add(new Adding(ItemTitle, ItemDescription, ItemDuedDate, ItemPriorityLevel));
 
